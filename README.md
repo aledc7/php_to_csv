@@ -93,13 +93,14 @@ function exportxlsdataCSV() {
             
             //volcamos el contenido del array en formato csv
              
-            // (ale dc) le meto comillas simples a cada campo 
+            // Aca le meto comillas simples a cada campo para evitar el formato cientifico E+15
              function lemetocomilla($value) {
                 return "'$value'";
             }
             
+            // (aledc) itero el resultado
             foreach($results as $val) {                                          
-            // (ale dc) uso la funcion array_map y llamo a la funcion que cree arriba          
+            // (aledc) uso la funcion array_map y llamo a la funcion que cree arriba          
             fputcsv($outputBuffer, array_map(lemetocomilla, $val), ';');                               
             }
                                   
