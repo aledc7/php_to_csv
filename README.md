@@ -7,7 +7,7 @@
 [![Dependencies](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/dependencias-none.svg)](https://aledc.com)
 
 
-Este repositorio muestra como convertir una __consulta SQL__ en un archivo  __.CSV__ . 
+Este repositorio muestra como convertir una __consulta SQL__ en un archivo  __.CSV__ con la función nativa de php __fputcsv__  
 Luego tambien se muestra como evitar que el archivo csv quede con notación cientifica __E+15__  lo cual confunde mucho.
 
 
